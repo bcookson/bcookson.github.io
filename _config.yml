@@ -17,14 +17,14 @@ repository               : "bcookson/bcookson.github.io"
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  name             : "Ben Cookson"
+  avatar           : "Screenshot 2024-02-14 at 8.39.50 PM.png"
+  bio              : "Master's student at the University of Toronto"
   pronouns         : # example: "she/her"
-  location         : "Location"
-  orcid            : "http://orcid.org/yourorcidurl"
+  location         : "Toronto, ON"
+  orcid            : 
   employer         :
-  email            : 
+  email            : "bcookson@cs.toronto.edu"
   uri              :
 
   # Manuscript repositories
