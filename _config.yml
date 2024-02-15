@@ -7,13 +7,13 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Ben Cookson"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Ben Cookson"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://www.cs.toronto.edu/%7Ebcookson/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "bcookson/bcookson.github.io"
 
 # Site Author
 author:
@@ -24,12 +24,12 @@ author:
   location         : "Location"
   orcid            : "http://orcid.org/yourorcidurl"
   employer         :
-  email            :  
+  email            : 
   uri              :
 
   # Manuscript repositories
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"         # Update with the correct link to your profile
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    :          # Update with the correct link to your profile
+  pubmed           : 
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
 
   # Social media
@@ -39,22 +39,22 @@ author:
   facebook         :
   flickr           :
   foursquare       :
-  github           : "academicpages"
+  github           : 
   goodreads        :
   google_plus      :
   keybase          :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   instagram        :
   lastfm           :
-  linkedin         :
-  mastodon         : "mastodonhandle"
+  linkedin         : https://www.linkedin.com/in/ben-cookson-804033177/
+  mastodon         : 
   medium           : #"add medium profile url here"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : #"replacethistwitterhandle"
   vine             :
   weibo            :
   wikipedia        :
