@@ -11,7 +11,9 @@ author_profile: true
 
 {% include base_path %}
 
-**Preprints/In Submission:**
+<br>
+
+<h2>Preprints/In Submission<h2>
 
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
