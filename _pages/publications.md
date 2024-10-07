@@ -11,7 +11,6 @@ author_profile: true
 
 {% include base_path %}
 
-<br>
 
 <h2>Preprints/In Submission<h2>
 
