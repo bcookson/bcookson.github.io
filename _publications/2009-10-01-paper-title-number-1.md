@@ -2,13 +2,7 @@
 title: "Temporal Fair Division"
 collection: publications
 permalink: /files/Temporal.pdf
-excerpt: ''
+excerpt: 'Benjamin Cookson, [Soroush Ebadian](https://ebadian.org), [Nisarg Shah](https://www.cs.toronto.edu/~nisarg/)}'
 date: 2024-10-30
 paperurl: 'http://academicpages.github.io/files/TemporalFairDivision.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
-This paper is about the number 1. The number 2 is left for future work.
-
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
-
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
