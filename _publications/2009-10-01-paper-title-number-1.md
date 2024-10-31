@@ -1,7 +1,7 @@
 ---
 title: "Temporal Fair Division"
 collection: publications
-permalink: /files/TemporalFairDivision.pdf
+permalink: /files/Temporal.pdf
 excerpt: ''
 date: 2024-10-30
 paperurl: 'http://academicpages.github.io/files/TemporalFairDivision.pdf'
