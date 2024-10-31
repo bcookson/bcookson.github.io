@@ -1,10 +1,9 @@
 ---
 title: "Temporal Fair Division"
 collection: publications
-permalink: /publication/TemporalFairDivision
+permalink: /files/TemporalFairDivision.pdf
 excerpt: ''
 date: 2024-10-30
-venue: 'Working Paper'
 paperurl: 'http://academicpages.github.io/files/TemporalFairDivision.pdf'
 citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
