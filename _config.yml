@@ -28,7 +28,7 @@ author:
   uri              :
 
   # Manuscript repositories
-  googlescholar    :          # Update with the correct link to your profile
+  googlescholar    : https://scholar.google.ca/citations?user=6MeXIDAAAAAJ&hl=en&oi=ao
   pubmed           : 
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
 
@@ -46,7 +46,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   instagram        :
   lastfm           :
-  linkedin         : https://www.linkedin.com/in/ben-cookson-804033177/
+  linkedin         :
   mastodon         : 
   medium           : #"add medium profile url here"
   pinterest        :
