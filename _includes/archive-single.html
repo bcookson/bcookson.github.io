@@ -1,6 +1,6 @@
 {% include base_path %}
 
-{% if post.header.teaser %}
+<!-- {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
   {% assign teaser = site.teaser %}
@@ -24,7 +24,7 @@
           {% endif %}
           alt="">
       </div>
-    {% endif %}
+    {% endif %} -->
 
     <h3 class="archive__item-title" itemprop="headline">
       {% if post.link %}
@@ -34,9 +34,9 @@
       {% endif %}
     </h3>
     
-    {% if post.read_time %}
+<!--     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
+    {% endif %} -->
 
 <!--         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
@@ -60,13 +60,13 @@
     <h3 class="archive__item-excerpt" itemprop="description">{{post.conference | markdownify}}</h3>
     {% endif %}
     
-    {% if post.citation and post.paperurl %}
+<!--     {% if post.citation and post.paperurl %}
       <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }} </p>
     {% elsif post.paperurl %}
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
-    {% endif %}
+    {% endif %} -->
 
   </article>
 </div>
