@@ -26,10 +26,10 @@
       </div>
     {% endif %} -->
     <div>
-      <b>{{title}}</b> 
-      {{ post.excerpt | markdownify}} 
-      {{post.conference | markdownify}} 
-      [<a href="{{ post.link }}">Arxiv Paper</a>]
+      <h3><b>{{title}}</b></h3>
+      <span>{{ post.excerpt | markdownify}} </span>
+      <span>{{post.conference | markdownify}} </span>
+      <span>[<a href="{{ post.link }}">Arxiv Paper</a>]</span>
     </div>
     <br>
 <!--     </artcle>
