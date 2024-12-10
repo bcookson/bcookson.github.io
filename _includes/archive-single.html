@@ -29,7 +29,7 @@
       <b>{{title}}</b>
     </div>
     <div>
-      {{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}
+      By {{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}
     </div>
     <div>
       {{post.conference | markdownify | remove: "<p>" | remove: "</p>" }}
