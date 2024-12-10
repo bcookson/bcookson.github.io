@@ -28,9 +28,7 @@
     <div>
       <p>
       <b>{{title}}</b>  
-      {{ post.excerpt | markdownify }}
-      {{ post.conference | markdownify }}
-      <a href="{{ post.link }}">[Arxiv Paper]</a>
+      {{ post.excerpt | markdownify }}\n{{ post.conference | markdownify }}\n[<a href="{{ post.link }}">Arxiv Paper</a>]
       </p>
     </div>
 <!--     </artcle>
