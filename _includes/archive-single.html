@@ -27,8 +27,8 @@
     {% endif %} -->
     <div>
       <h3><b>{{title}}</b></h3>
-      <span>{{ post.excerpt | markdownify}} </span>
-      <span>{{post.conference | markdownify}} </span>
+      <span>{{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" }} </span>
+      <span>{{post.conference | markdownify | remove: "<p>" | remove: "</p>" }} </span>
       <span>[<a href="{{ post.link }}">Arxiv Paper</a>]</span>
     </div>
     <br>
