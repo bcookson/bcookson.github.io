@@ -8,7 +8,7 @@ author_profile: true
 {% include base_path %}
 
 
-<h2>Papers</h2>
+<h2><u>Papers</u></h2>
 
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
