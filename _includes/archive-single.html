@@ -1,4 +1,4 @@
-<!-- {% include base_path %} -->
+{% include base_path %}
 
 <!-- {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
@@ -27,16 +27,16 @@
     {% endif %} -->
     <div>
       <b>{{title}}</b>  
-    <\div>
+    </div>
     <div>
       {{ post.excerpt | markdownify }}
-    <\div>
+    </div>
     <div>
       {{ post.conference | markdownify }}
-    <\div>
+    </div>
     <div>
       <a href="{{ post.link }}">[Arxiv Paper]</a>
-    <\div>
+    </div>
       
 <!--     <h3 class="archive__item-title" itemprop="headline">
       {% if post.link %}
