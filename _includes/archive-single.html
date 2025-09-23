@@ -34,9 +34,16 @@
     <div>
       {{post.conference | markdownify | remove: "<p>" | remove: "</p>" }}
     </div>
+    {% if post.note %}
+    <div>
+      {{post.note | markdownify | remove: "<p>" | remove: "</p>" }}
+    </div>
+    {% endif %}
+    {% if post.link %}
     <div>
       [<a href="{{ post.link }}">Arxiv Paper</a>]
     </div>
+    {% endif %}
     <br>
 <!--     </artcle>
     </div> -->
