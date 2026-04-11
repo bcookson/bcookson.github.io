@@ -9,7 +9,7 @@ author_profile: true
 
 <style>
 .pub-card {
-  border-left: 4px solid #52adc8;
+  border-left: 4px solid #3a9e70;
   padding: 1.1em 1.4em 1em 1.4em;
   margin-bottom: 1.4em;
   background: #f8fafb;
@@ -20,7 +20,7 @@ author_profile: true
 
 .pub-card:hover {
   box-shadow: 0 3px 10px rgba(0,0,0,0.11);
-  border-left-color: #3a91b0;
+  border-left-color: #2d8560;
 }
 
 .pub-card__title {
@@ -83,7 +83,7 @@ author_profile: true
 
 .pub-card__link {
   display: inline-block;
-  background: #52adc8;
+  background: #3a9e70;
   color: #fff !important;
   padding: 2px 10px;
   border-radius: 3px;
@@ -95,18 +95,43 @@ author_profile: true
 }
 
 .pub-card__link:hover {
-  background: #3a91b0;
+  background: #2d8560;
   color: #fff !important;
 }
 
+.pub-card--working .pub-card__link {
+  background: #d4823a;
+}
+
+.pub-card--working .pub-card__link:hover {
+  background: #b86d2e;
+}
+
+.page__title {
+  display: none;
+}
+
 .pub-section-heading {
-  font-size: 1.2em;
-  font-weight: 700;
-  color: #444;
-  margin: 1.5em 0 0.9em 0;
-  padding-bottom: 0.4em;
-  border-bottom: 2px solid #dde3e8;
-  letter-spacing: 0.01em;
+  font-size: 1.55em;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 2.2em 0 1em 0;
+  padding: 0.15em 0 0.15em 0.65em;
+  border-left: 5px solid #ccc;
+  border-bottom: none;
+  letter-spacing: -0.01em;
+}
+
+.pub-section-heading:first-child {
+  margin-top: 0.5em;
+}
+
+.pub-section-heading--conference {
+  border-left-color: #3a9e70;
+}
+
+.pub-section-heading--working {
+  border-left-color: #d4823a;
 }
 
 /* Expandable cards */
@@ -152,10 +177,37 @@ details.pub-card[open] .pub-card__chevron {
   line-height: 1.65;
   margin: 0;
 }
+
+.pub-card--working {
+  border-left-color: #d4823a;
+}
+
+.pub-card--working:hover {
+  border-left-color: #b86d2e;
+}
+
+.pub-card__badge--preprint {
+  display: inline-block;
+  background: #d4823a;
+  color: #fff;
+  padding: 2px 9px;
+  border-radius: 3px;
+  font-size: 0.77em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
 </style>
 
-<h2 class="pub-section-heading">Conference Papers</h2>
+<h2 class="pub-section-heading pub-section-heading--working">Working Papers</h2>
 
-{% for post in site.publications reversed %}
+{% assign working_papers = site.publications | where: "status", "working" | sort: "date" | reverse %}
+{% for post in working_papers %}
+  {% include pub-single.html %}
+{% endfor %}
+
+<h2 class="pub-section-heading pub-section-heading--conference">Conference Papers</h2>
+
+{% assign conference_papers = site.publications | where: "status", "conference" | sort: "date" | reverse %}
+{% for post in conference_papers %}
   {% include pub-single.html %}
 {% endfor %}

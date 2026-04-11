@@ -1,16 +1,22 @@
+{% assign working = false %}
+{% if post.status == "working" %}{% assign working = true %}{% endif %}
+
 {% if post.abstract %}
-<details class="pub-card pub-card--expandable">
+<details class="pub-card pub-card--expandable{% if working %} pub-card--working{% endif %}">
   <summary class="pub-card__summary">
     <div class="pub-card__body">
       <h3 class="pub-card__title">{{ post.title }} <span class="pub-card__chevron" aria-hidden="true">&#9660;</span></h3>
       <p class="pub-card__authors">{{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" | replace: "Benjamin Cookson", "<span class='pub-card__me'>Benjamin Cookson</span>" }}</p>
       <p class="pub-card__venue">{{ post.conference | markdownify | remove: "<p>" | remove: "</p>" }}</p>
       <div class="pub-card__footer">
-        {% if post.note %}
-        <span class="pub-card__badge pub-card__badge--award">&#9733; {{ post.note }}</span>
+        {% if working %}
+        <span class="pub-card__badge pub-card__badge--preprint">Preprint</span>
         {% endif %}
         {% if post.link %}
         <a href="{{ post.link }}" class="pub-card__link" target="_blank" rel="noopener" onclick="event.stopPropagation()">ArXiv</a>
+        {% endif %}
+        {% if post.note %}
+        <span class="pub-card__badge pub-card__badge--award">&#9733; {{ post.note }}</span>
         {% endif %}
       </div>
     </div>
@@ -20,12 +26,15 @@
   </div>
 </details>
 {% else %}
-<div class="pub-card">
+<div class="pub-card{% if working %} pub-card--working{% endif %}">
   <div class="pub-card__body">
     <h3 class="pub-card__title">{{ post.title }}</h3>
     <p class="pub-card__authors">{{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" | replace: "Benjamin Cookson", "<span class='pub-card__me'>Benjamin Cookson</span>" }}</p>
     <p class="pub-card__venue">{{ post.conference | markdownify | remove: "<p>" | remove: "</p>" }}</p>
     <div class="pub-card__footer">
+      {% if working %}
+      <span class="pub-card__badge pub-card__badge--preprint">Preprint</span>
+      {% endif %}
       {% if post.note %}
       <span class="pub-card__badge pub-card__badge--award">&#9733; {{ post.note }}</span>
       {% endif %}
