@@ -211,3 +211,15 @@ details.pub-card[open] .pub-card__chevron {
 {% for post in conference_papers %}
   {% include pub-single.html %}
 {% endfor %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('details.pub-card').forEach(function(el) {
+    el.addEventListener('toggle', function() {
+      if (el.open && typeof MathJax !== 'undefined') {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, el]);
+      }
+    });
+  });
+});
+</script>
