@@ -1,7 +1,7 @@
 ---
 title: "Improved Lower Bounds for Proportionally Fair Clustering"
 collection: publications
-excerpt: 'Benjamin Cookson, Eva Deltl, Yeeseok Oh'
+excerpt: 'Benjamin Cookson, [Eva Deltl](https://deltl.de/eva/), [Yeeseok Oh](https://yeeseokoh.github.io)'
 conference: 'Working Paper'
 link: '/files/fair-clustering-arxiv-final.pdf'
 date: '2026-06-01'
