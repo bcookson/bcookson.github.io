@@ -1,15 +1,17 @@
 {% assign working = false %}
 {% if post.status == "working" %}{% assign working = true %}{% endif %}
+{% assign llm = false %}
+{% if post.status == "llm" %}{% assign llm = true %}{% endif %}
 
 {% if post.abstract %}
-<details class="pub-card pub-card--expandable{% if working %} pub-card--working{% endif %}">
+<details class="pub-card pub-card--expandable{% if working %} pub-card--working{% endif %}{% if llm %} pub-card--llm{% endif %}">
   <summary class="pub-card__summary">
     <div class="pub-card__body">
       <h3 class="pub-card__title">{{ post.title }} <span class="pub-card__chevron" aria-hidden="true">&#9660;</span></h3>
       <p class="pub-card__authors">{{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" | replace: "Benjamin Cookson", "<span class='pub-card__me'>Benjamin Cookson</span>" }}</p>
       <p class="pub-card__venue">{{ post.conference | markdownify | remove: "<p>" | remove: "</p>" }}</p>
       <div class="pub-card__footer">
-        {% if working %}
+        {% if working or llm %}
         <span class="pub-card__badge pub-card__badge--preprint">Preprint</span>
         {% endif %}
         {% if post.link %}
@@ -26,13 +28,13 @@
   </div>
 </details>
 {% else %}
-<div class="pub-card{% if working %} pub-card--working{% endif %}">
+<div class="pub-card{% if working %} pub-card--working{% endif %}{% if llm %} pub-card--llm{% endif %}">
   <div class="pub-card__body">
     <h3 class="pub-card__title">{{ post.title }}</h3>
     <p class="pub-card__authors">{{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" | replace: "Benjamin Cookson", "<span class='pub-card__me'>Benjamin Cookson</span>" }}</p>
     <p class="pub-card__venue">{{ post.conference | markdownify | remove: "<p>" | remove: "</p>" }}</p>
     <div class="pub-card__footer">
-      {% if working %}
+      {% if working or llm %}
       <span class="pub-card__badge pub-card__badge--preprint">Preprint</span>
       {% endif %}
       {% if post.note %}
