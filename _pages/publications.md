@@ -250,6 +250,13 @@ details.pub-card[open] .pub-card__chevron {
   {% include pub-single.html %}
 {% endfor %}
 
+<h2 class="pub-section-heading pub-section-heading--conference">Conference Papers</h2>
+
+{% assign conference_papers = site.publications | where: "status", "conference" | sort: "date" | reverse %}
+{% for post in conference_papers %}
+  {% include pub-single.html %}
+{% endfor %}
+
 <h2 class="pub-section-heading pub-section-heading--llm">LLM-Generated Expositions</h2>
 
 <div class="pub-section-note" markdown="1">
@@ -258,13 +265,6 @@ Recently, Large Language Models have become extremely adept at solving problems 
 
 {% assign llm_papers = site.publications | where: "status", "llm" | sort: "date" | reverse %}
 {% for post in llm_papers %}
-  {% include pub-single.html %}
-{% endfor %}
-
-<h2 class="pub-section-heading pub-section-heading--conference">Conference Papers</h2>
-
-{% assign conference_papers = site.publications | where: "status", "conference" | sort: "date" | reverse %}
-{% for post in conference_papers %}
   {% include pub-single.html %}
 {% endfor %}
 
