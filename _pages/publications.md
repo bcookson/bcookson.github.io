@@ -211,6 +211,10 @@ details.pub-card[open] .pub-card__chevron {
   margin: 0;
 }
 
+.pub-abstract p + p {
+  margin-top: 0.7em;
+}
+
 .pub-card--working {
   border-left-color: #d4823a;
 }

@@ -24,7 +24,9 @@
     </div>
   </summary>
   <div class="pub-abstract">
-    <p>{{ post.abstract }}</p>
+{% capture newline %}
+{% endcapture %}{% assign abstract_paragraphs = post.abstract | split: newline %}{% for paragraph in abstract_paragraphs %}
+    <p>{{ paragraph }}</p>{% endfor %}
   </div>
 </details>
 {% else %}
