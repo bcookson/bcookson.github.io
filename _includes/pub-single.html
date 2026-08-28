@@ -15,7 +15,7 @@
         <span class="pub-card__badge pub-card__badge--preprint">Preprint</span>
         {% endif %}
         {% if post.link %}
-        <a href="{{ post.link }}" class="pub-card__link" target="_blank" rel="noopener" onclick="event.stopPropagation()">ArXiv</a>
+        <a href="{{ post.link }}" class="pub-card__link" target="_blank" rel="noopener" onclick="event.stopPropagation()">{{ post.link_label | default: "ArXiv" }}</a>
         {% endif %}
         {% if post.note %}
         <span class="pub-card__badge pub-card__badge--award">&#9733; {{ post.note }}</span>
@@ -41,7 +41,7 @@
       <span class="pub-card__badge pub-card__badge--award">&#9733; {{ post.note }}</span>
       {% endif %}
       {% if post.link %}
-      <a href="{{ post.link }}" class="pub-card__link" target="_blank" rel="noopener">ArXiv</a>
+      <a href="{{ post.link }}" class="pub-card__link" target="_blank" rel="noopener">{{ post.link_label | default: "ArXiv" }}</a>
       {% endif %}
     </div>
   </div>
