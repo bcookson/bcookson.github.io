@@ -4,7 +4,7 @@ collection: publications
 excerpt: 'Benjamin Cookson, [Nisarg Shah](https://www.cs.toronto.edu/~nisarg/)'
 conference: '[EAAMO-26](https://conference2026.eaamo.org): Proc. of the 6th ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization, 2026'
 link: 'https://arxiv.org/abs/2608.31121'
-date: '2026-04-10'
+date: '2026-08-31'
 status: 'conference'
 abstract: >-
   We study fair allocation of indivisible goods under additive valuations and matroid constraints. A

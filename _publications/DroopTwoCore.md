@@ -4,7 +4,7 @@ collection: publications
 excerpt: 'Benjamin Cookson, [Eva Deltl](https://deltl.de/eva/), [Yeeseok Oh](https://yeeseokoh.github.io)'
 conference: 'Preprint, 2026'
 link: 'https://arxiv.org/abs/2608.29097'
-date: '2026-08-27'
+date: '2026-08-29'
 status: 'llm'
 abstract: >-
   This paper studies the problem of proportionally fair clustering, where the goal is to select $k$
