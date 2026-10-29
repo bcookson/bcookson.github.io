@@ -17,6 +17,9 @@
         {% if post.link %}
         <a href="{{ post.link }}" class="pub-card__link" target="_blank" rel="noopener" onclick="event.stopPropagation()">{{ post.link_label | default: "ArXiv" }}</a>
         {% endif %}
+        {% if post.video %}
+        <a href="{{ post.video }}" class="pub-card__link" target="_blank" rel="noopener" onclick="event.stopPropagation()">Video</a>
+        {% endif %}
         {% if post.note %}
         <span class="pub-card__badge pub-card__badge--award">&#9733; {{ post.note }}</span>
         {% endif %}
@@ -44,6 +47,9 @@
       {% endif %}
       {% if post.link %}
       <a href="{{ post.link }}" class="pub-card__link" target="_blank" rel="noopener">{{ post.link_label | default: "ArXiv" }}</a>
+      {% endif %}
+      {% if post.video %}
+      <a href="{{ post.video }}" class="pub-card__link" target="_blank" rel="noopener">Video</a>
       {% endif %}
     </div>
   </div>
